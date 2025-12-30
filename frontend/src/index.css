@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(99,102,241,.25), transparent 55%),
+              radial-gradient(1000px 500px at 90% 20%, rgba(34,211,238,.18), transparent 55%),
+              radial-gradient(900px 500px at 50% 95%, rgba(236,72,153,.12), transparent 60%),
+              #070A12;
+  color: rgba(255,255,255,.92);
+}
+
+.glass {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  backdrop-filter: blur(14px);
+}
+
+.neon-border {
+  border: 1px solid rgba(99,102,241,.35);
+  box-shadow: 0 0 0 1px rgba(34,211,238,.15) inset, 0 0 30px rgba(99,102,241,.18);
+}
+
