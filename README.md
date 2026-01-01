@@ -1,15 +1,15 @@
 # Inventario App (Fullstack) — React + Express + PostgreSQL + Prisma
 
 Aplicación web fullstack para la **gestión de inventario** con:
-- ✅ Autenticación (Registro/Login) con **JWT**
-- ✅ **CRUD** de Productos (Crear, Leer, Actualizar, Eliminar)
-- ✅ Control de stock con **Movimientos (IN/OUT)** + Historial
-- ✅ Reporte de **Stock Bajo**
-- ✅ Frontend **responsive** con React + Tailwind (estilo futurista glass/neon)
+- Autenticación (Registro/Login) con **JWT**
+- **CRUD** de Productos (Crear, Leer, Actualizar, Eliminar)
+- Control de stock con **Movimientos (IN/OUT)** + Historial
+- Reporte de **Stock Bajo**
+- Frontend **responsive** con React + Tailwind (estilo futurista glass/neon)
 
 ---
 
-## 🧱 Tecnologías
+##  Tecnologías
 
 ### Backend
 - Node.js + Express
@@ -29,7 +29,7 @@ Aplicación web fullstack para la **gestión de inventario** con:
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 inventario-app/
@@ -44,7 +44,7 @@ inventario-app/
 
 ---
 
-## ✅ Requisitos previos
+## Requisitos previos
 
 - Node.js (recomendado LTS)
 - npm
@@ -53,7 +53,7 @@ inventario-app/
 
 ---
 
-## ⚙️ Configuración de base de datos (PostgreSQL)
+## Configuración de base de datos (PostgreSQL)
 
 1. Crea una base de datos (ejemplo: `inventario`).
 2. Asegúrate de tener usuario/contraseña y puerto.
@@ -65,7 +65,7 @@ Ejemplo de conexión:
 
 ---
 
-## 🔐 Variables de entorno
+## Variables de entorno
 
 ### Backend: `backend/.env`
 Crea el archivo `backend/.env` (NO se sube a GitHub):
@@ -87,7 +87,7 @@ VITE_API_URL=http://localhost:4000
 
 ---
 
-## 🚀 Instalación y ejecución
+## Instalación y ejecución
 
 ### 1) Backend
 
@@ -111,7 +111,7 @@ Ejecutar backend:
 npm run dev
 ```
 
-✅ Debería iniciar en: `http://localhost:4000`
+Debería iniciar en: `http://localhost:4000`
 
 ---
 
@@ -125,11 +125,11 @@ npm install
 npm run dev
 ```
 
-✅ Debería abrir en: `http://localhost:5173`
+Debería abrir en: `http://localhost:5173`
 
 ---
 
-## 🧪 Pruebas rápidas (API)
+## Pruebas rápidas (API)
 
 > Todas las rutas protegidas requieren header:
 `Authorization: Bearer <TOKEN>`
@@ -146,7 +146,7 @@ La respuesta devuelve un `token`.
 ### 2) Listar productos
 ```bash
 curl http://localhost:4000/api/products \
-  -H "Authorization: Bearer TU_TOKEN"
+  -H "Authorization: Bearer Mi_token"
 ```
 
 ### 3) Crear un producto
@@ -159,7 +159,7 @@ curl -X POST http://localhost:4000/api/products \
 
 ---
 
-## 🔗 Endpoints principales
+## Endpoints principales
 
 ### Auth
 - `POST /api/auth/register` → registra usuario
@@ -183,7 +183,7 @@ curl -X POST http://localhost:4000/api/products \
 
 ---
 
-## 🖥️ Uso de la aplicación (Frontend)
+## Uso de la aplicación (Frontend)
 
 1. Abre `http://localhost:5173`
 2. Inicia sesión o regístrate
@@ -194,21 +194,7 @@ curl -X POST http://localhost:4000/api/products \
 
 ---
 
-## 📸 Capturas (Screenshots)
-
-Crea esta carpeta si no existe:
-`docs/screenshots/`
-
-Toma capturas y guárdalas con estos nombres sugeridos:
-
-- `docs/screenshots/login.png`
-- `docs/screenshots/register.png`
-- `docs/screenshots/products.png`
-- `docs/screenshots/edit-product.png`
-- `docs/screenshots/movements.png`
-- `docs/screenshots/low-stock.png`
-
-Luego se verán aquí:
+## Capturas (Screenshots)
 
 ### Login
 ![Login](docs/screenshots/login.png)
@@ -230,13 +216,12 @@ Luego se verán aquí:
 
 ---
 
-## 🧩 Notas de seguridad
-- No subas `.env` al repositorio.
+## Notas de seguridad
 - El token JWT se guarda en `localStorage` para mantener sesión.
 
 ---
 
-## 🛠️ Solución de problemas
+## Solución de problemas
 
 ### Pantalla en blanco (React Router / React duplicado)
 - Borra `node_modules` y reinstala:
@@ -260,5 +245,5 @@ npx prisma generate
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 - Brayan
